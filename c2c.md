@@ -130,7 +130,7 @@ mon_tab = [5, 8, 6, 9]
 for ele in mon_tab:
 	print(ele)
 ```
-L'exécution du programme ci-dessus permettra d'afficher toutes les valeurs contenues dans le tableau *mn_tab* :
+L'exécution du programme ci-dessus permettra d'afficher toutes les valeurs contenues dans le tableau *mon_tab* :
 
 ```
 5
