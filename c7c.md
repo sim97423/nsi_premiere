@@ -29,7 +29,7 @@ Il est possible de retrouver une représentation décimale en base 10 à partir 
 
 Partons de 100,0101<sub>2</sub>
 
-Pas de problème pour la partie entière, nous obtenons "4". Pour la partie décimale nous devons écrire : 0 x 2-1 + 1 x 2-2 + 0 x 2-3 + 1 x 2-4 = 0,3125. Nous avons donc 4,3125<sub>10</sub>
+Pas de problème pour la partie entière, nous obtenons "4". Pour la partie décimale nous devons écrire : 0 x 2<sup>-1</sup> + 1 x 2<sup>-2</sup> + 0 x 2<sup>-3</sup> + 1 x 2<sup>-4</sup> = 0,3125. Nous avons donc 4,3125<sub>10</sub>
 
 ### c) le cas  particulier de 0,1<sub>10</sub>
 
