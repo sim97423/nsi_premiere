@@ -105,7 +105,7 @@ Je vous rassure tout de suite : c'est plus simple dans ce sens-là que dans l'au
 Prenons un nombre au hasard, tel que 11010011. Il s'étale sur 8 rangs, et comme dit précédemment, chaque rang correspond à une puissance de deux.
 Le premier rang (en partant de la droite) est le rang 0, le second est le 1, etc.
 
-Pour convertir le tout en décimale, on procède de la manière suivante : on multiplie par 20 la valeur du rang 0, par 21 la valeur du rang 1, par 22 la valeur du rang 2, [...], par 210 la valeur du rang 10, etc.
+Pour convertir le tout en décimale, on procède de la manière suivante : on multiplie par 2<sup>0</sup> la valeur du rang 0, par 2<sup>1</sup> la valeur du rang 1, par 2<sup>2</sup> la valeur du rang 2, [...], par 2<sup>10</sup> la valeur du rang 10, etc.
 
 Après ça, il ne reste plus qu'à remplacer les puissances de 2 par leurs valeurs et de calculer la somme : (Attention à bien partir de la droite !)
 11010011<sub>binaire</sub>=1∗1+1∗2+0∗4+0∗8+1∗16+0∗32+1∗64+1∗128=211<sub>décimal</sub>
