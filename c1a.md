@@ -151,7 +151,7 @@ Après avoir exécuté le programme ci-dessus, tapez dans la console *ma_fonctio
 Soit la fonction suivante :
 
 ```
-def ma_fonimport mathction(x,b):
+def ma_fonction(x,b):
 	y = 4 * x + b
 	return y 
 ```
