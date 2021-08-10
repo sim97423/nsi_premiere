@@ -412,7 +412,7 @@ Je ne vais pas m'étendre sur l'utilisation du mot clé *global* car comme  nous
 
 ### b) les effets de bord
 
-On parle d'effet de bord quand une fonction modifie l'état d'une variable globale. Dans notre exemple ci-dessus, la fonction *ma_fonc* modifie bien la valeur de *i* : avant l'exécution de *ma_fonc*, *i* a la valeur 3, après l'exécution de la fonction fct, i est associé à la valeur 4. Nous avons donc bien un effet de bord.
+On parle d'effet de bord quand une fonction modifie l'état d'une variable globale. Dans notre exemple ci-dessus, la fonction *ma_fonc* modifie bien la valeur de *i* : avant l'exécution de *ma_fonc*, *i* a la valeur 3, après l'exécution de la fonction *ma_fonc*, *i* est associé à la valeur 4. Nous avons donc bien un effet de bord.
 
 Les effets de bord c'est "mal" ! Mais pourquoi est-ce "mal" ?
 
