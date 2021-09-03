@@ -222,7 +222,7 @@ Soit la fonction suivante :
 
 ```
 def ma_fct(a,b):
-	if a < 5 or b > 2 :
+	if a < 2 or b < 2 :
 		return 42
 	else :
 		return 24
@@ -243,6 +243,7 @@ def ma_fct(a):
 	b = 0
 	while a > 2:
 		b = b + 1
+		a = a - 2
 	return b
 		
 val = ma_fct(6)
@@ -262,6 +263,7 @@ def ma_fct(a):
 	b = 3
 	while a > 0:
 		b = b + a
+		a = a - 2
 	return b
 		
 val = ma_fct(6)
