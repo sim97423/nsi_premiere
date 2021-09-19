@@ -163,7 +163,7 @@ Attention, il faut bien lire de bas en haut !
 
 ### d) Convertir un nombre hexadécimal en décimal
 
-e principe est le même que pour la conversation "binaire en décimal" sauf qu'au lieu d'utiliser des 2<sup>n</sup> on utilise des 16<sup>n</sup> :
+Le principe est le même que pour la conversation "binaire en décimal" sauf qu'au lieu d'utiliser des 2<sup>n</sup> on utilise des 16<sup>n</sup> :
 
 exemple :
 
