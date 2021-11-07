@@ -361,6 +361,12 @@ Ces assertions permettent de pallier, au moins en partie, aux insuffisances de P
 
 L'exemple donné ici est volontairement très simple (voire même simpliste), mais ce genre de problèmes peut se poser dans des programmes extrêmement complexes, ou parfois, il peut se passer des choses inexplicables, très difficiles à comprendre, durant l'exécution. Alors que les erreurs qui entrainent ces comportements erratiques auraient été facilement identifiées si une exception avait été levée.
 
+Il est possible d'ajouter des commentaires à une assertions. Ces commentaires seront affichés dans la console si l'assertions lève une exception :
+
+```
+assert isinstance(x,int) 
+```
+
 ### c) Tester ses programmes en Python
 
 Les assertions vues ci-dessus  vont aussi nous permettre de tester nos fonctions. Par tester, j'entends : "vérifier que la fonction renvoie bien la valeur attendue".
