@@ -65,7 +65,7 @@ En base dix, il est possible d'écrire les très grands nombres et les très pet
 
 Pour passer d'une écriture sans "puissance de deux" à une écriture avec "puissance de deux", il suffit de décaler la virgule : 1101,1001 = 1,1011001.2<sup>11</sup> pour passer de 1101,1001 à 1,1011001 nous avons décalé la virgule de 3 rangs vers la gauche d'où le 2<sup>11</sup> (attention de ne pas oublier que nous travaillons en base 2 le 11 correspond bien à un décalage de 3 rangs de la virgule).
 
-Si l'on désire décaler la virgule vers la gauche, il va être nécessaire d'utiliser des "puissances de deux négatives" 0,0110 = 1,10.2<sup>-10</sup>, nous décalons la virgule de 2 rangs vers la droite, d'où le -10
+Si l'on désire décaler la virgule vers la droite, il va être nécessaire d'utiliser des "puissances de deux négatives" 0,0110 = 1,10.2<sup>-10</sup>, nous décalons la virgule de 2 rangs vers la droite, d'où le -10
 
 ## 3) représentation des flottants dans un ordinateur
 
@@ -91,7 +91,7 @@ Pour écrire un nombre flottant en respectant la norme IEEE754, il est nécessai
 
 La partie XXXXXX de 1,XXXXX.2<sup>e</sup> constitue la mantisse (dans notre exemple 1010,11001 la mantisse est 01011001). Comme la mantisse comporte 23 bits en simple précision, il faudra compléter avec le nombre de zéro nécessaire afin d'atteindre les 23 bits (si nous avons 01011001, il faudra ajouter 23 - 8 = 15 zéros à droite, ce qui donnera en fin de compte 01011001000000000000000 )
 
-Notre première intuition serait de dire que la partie "exposant" correspond simplement au "e" de 1,XXXXX.2<sup>e</sup> (dans notre exemple 1010,11001, nous aurions 11). En faite, c'est un peu plus compliqué que cela. En effet, comment représenter les exposants négatifs ? Aucun bit pour le signe de l'exposant n'a été prévu dans le norme IEEE754, une autre solution a été choisie :
+Notre première intuition serait de dire que la partie "exposant" correspond simplement au "e" de 1,XXXXX.2<sup>e</sup> (dans notre exemple 1010,11001, nous aurions 11). En faite, c'est un peu plus compliqué que cela. En effet, comment représenter les exposants négatifs ? Aucun bit pour le signe de l'exposant n'a été prévu dans la norme IEEE754, une autre solution a été choisie :
 
 Pour le format simple précision, 8 bits sont consacrés à l'exposant, il est donc possible de représenter 256 valeurs, nous allons pouvoir représenter des exposants compris entre -126<sub>10</sub> et +127<sub>10</sub> (les valeurs -127 et +128 sont des valeurs réservées, nous n'aborderons pas ce sujet ici). Pour avoir des valeurs uniquement positives, il va falloir procéder à un décalage : ajouter systématiquement 127 à la valeur de l'exposant. Prenons tout de suite un exemple (dans la suite, afin de simplifier les choses nous commencerons par écrire les exposants en base 10 avant de les passer en base 2 une fois le décalage effectué) :
 
@@ -122,7 +122,7 @@ nous avons vu plus  que la représentation en binaire est infinie :
 
 0,0001100110011...<sub>2</sub>, le schéma "0011" se répète à "l'infini"
 
-La mémoire d'un ordinateur n'étant pas infini, nous allons devoir nous limiter à 32 bits (en simple précision) ou à 64 bits (en double précision) pour la représentation de 0,1<sub>10</sub>
+La mémoire d'un ordinateur n'étant pas infinie, nous allons devoir nous limiter à 32 bits (en simple précision) ou à 64 bits (en double précision) pour la représentation de 0,1<sub>10</sub>
 
 Nous obtenons donc la représentation suivante (simple précision) :
 
