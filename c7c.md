@@ -65,7 +65,7 @@ En base dix, il est possible d'écrire les très grands nombres et les très pet
 
 Pour passer d'une écriture sans "puissance de deux" à une écriture avec "puissance de deux", il suffit de décaler la virgule : 1101,1001 = 1,1011001.2<sup>11</sup> pour passer de 1101,1001 à 1,1011001 nous avons décalé la virgule de 3 rangs vers la gauche d'où le 2<sup>11</sup> (attention de ne pas oublier que nous travaillons en base 2 le 11 correspond bien à un décalage de 3 rangs de la virgule).
 
-Si l'on désire décaler la virgule vers la gauche, il va être nécessaire d'utiliser des "puissances de deux négatives" 0,0110 = 1,10.2<sup>-10</sup>, nous décalons la virgule de 2 rangs vers la droite, d'où le -10
+Si l'on désire décaler la virgule vers la droite, il va être nécessaire d'utiliser des "puissances de deux négatives" 0,0110 = 1,10.2<sup>-10</sup>, nous décalons la virgule de 2 rangs vers la droite, d'où le -10
 
 ## 3) représentation des flottants dans un ordinateur
 
